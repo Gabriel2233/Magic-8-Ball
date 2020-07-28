@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.magicBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.ballImg {
+    width: 350px;
+    height: 350px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.magicInput {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 8px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.submitBtn {
+    border: 1px solid black;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 15px 20px 15px 20px;
+    background-color: black;
+    position: relative;
+    color: #fff;
+    margin-top: 50px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+  
+.submitBtn:hover {
+    animation: mymove 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    100% {background-color: white; 
+        color: black; 
+        border: 1px solid rgb(219, 215, 215);
+        box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+.response {
+    text-align: center;
+    margin-top: 50px;
+}
